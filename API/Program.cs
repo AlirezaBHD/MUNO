@@ -4,7 +4,7 @@ using Application;
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 var configuration = builder.Configuration;
-builder.Host.UseAppLogging(builder.Configuration);
+// builder.Host.UseAppLogging(builder.Configuration);
 
 services
     .AddAppCors(configuration)

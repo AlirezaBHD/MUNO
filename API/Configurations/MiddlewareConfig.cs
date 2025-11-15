@@ -15,7 +15,7 @@ public static class MiddlewareConfig
         app.UseRateLimiter();
 
         app.UseMiddleware<UserIdEnricherMiddleware>();
-        app.UseMiddleware<ExceptionHandlingMiddleware>();
+        // app.UseMiddleware<ExceptionHandlingMiddleware>();
         app.UseMiddleware<SecurityHeadersMiddleware>();
 
 
